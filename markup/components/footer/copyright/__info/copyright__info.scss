@@ -2,16 +2,11 @@
 	display: inline-block;
 	float: left;
 	color: #343434;
-	height: 44px;
-	display: none;
-	line-height: 44px;
 }
 @media only screen and (max-width: 479px) {
 	.copyright__info {
 		display: block;
 		text-align: center;
-		height: 20px;
-		line-height: 20px;
 		float: none;
 	}
 }

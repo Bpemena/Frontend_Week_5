@@ -14,8 +14,9 @@
 		height: 145px;
 	}
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 479px) {
 	.subscribe__content {
-		height: auto;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 }

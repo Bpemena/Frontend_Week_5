@@ -4,6 +4,9 @@
 	padding-left: 60px;
 	font-size: 18px;
 	border: none;
+	background-image: url('%=static=%assets/footer/formmail.png');
+	background-repeat: no-repeat;
+	background-position: 25px 50%;
 	&::placeholder {
 		color: #858585;
 	}
@@ -24,6 +27,8 @@
 		width: 270px;
 		height: 30px;
 		font-size: 14px;
+		padding-left: 40px;
+		background-position: 10px 50%;
 	}
 }
 @media only screen and (max-width: 320px) {

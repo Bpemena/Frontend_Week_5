@@ -1,2 +1,11 @@
 .copyright {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+}
+@media only screen and (max-width: 479px) {
+	.copyright {
+		height: 20px;
+		line-height: 20px;
+	}
 }
