@@ -1,0 +1,33 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+body {
+	background-color: #ededed;
+}
+* {
+    font-family: 'ProximaNova', sans-serif;
+    box-sizing: border-box;
+}
+.pageContent {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+@media only screen and (max-width: 1367px) {
+	html, body {
+		font-size: 14px;
+	}
+	.pageContent {
+		padding: 0px 5px 0px 5px;
+	}
+}
+@media only screen and (max-width: 599px) {
+	html, body {
+		font-size: 12px;
+	}
+	.pageContent {
+		padding: 0px 5px 0px 5px;
+	}
+}

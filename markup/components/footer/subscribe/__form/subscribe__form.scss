@@ -1,0 +1,23 @@
+.subscribe__form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 622px;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 1367px) {
+	.subscribe__form {
+		width: 560px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.subscribe__form {
+		width: 420px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.subscribe__form {
+		width: 100%;
+	}
+}

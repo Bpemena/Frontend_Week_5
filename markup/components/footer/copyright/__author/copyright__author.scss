@@ -1,0 +1,20 @@
+.copyright__author {
+	display: inline-block;
+	float: right;
+	height: 44px;
+	line-height: 44px;
+	display: none;
+	color: #004884;
+	span {
+		border-bottom: solid 1px #004884;
+	}
+}
+@media only screen and (max-width: 479px) {
+	.copyright__author {
+		display: block;
+		text-align: center;
+		height: 20px;
+		line-height: 20px;
+		float: none;
+	}
+}

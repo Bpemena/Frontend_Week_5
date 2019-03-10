@@ -1,0 +1,26 @@
+.subscribe__info {
+	color: #858585;
+	text-align: left;
+	font-size: 14px;
+	float: left;
+	margin-top: 15px;
+}
+
+@media only screen and (max-width: 1367px) {
+	.subscribe__info {
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.subscribe__info {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.subscribe__info {
+		text-align: justify;
+		br {
+			display: none;
+		}
+	}
+}

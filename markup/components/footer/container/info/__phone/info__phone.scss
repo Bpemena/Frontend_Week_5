@@ -1,0 +1,46 @@
+.info__phone {
+	line-height: 1.2;
+	position: relative;
+	margin-top: 30px;
+	&--num1, &--num2 {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.info__phone {
+		margin: 0;
+		&--num1,&--num2 {
+			display: inline-block;
+		}
+		&--num1 {
+			margin-right: 5px;
+			padding-right: 5px;
+			border-right: 2px solid #fff;
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.info__phone {
+		margin-top: 10px;
+		&--num1, &--num2 {
+			display: block;
+			border: none;
+		}
+	}
+}
+@media only screen and (max-width: 479px) {
+	.info__phone {
+		order: 3;
+		width: 100%;
+		text-align: center;
+		&--num1,&--num2 {
+			display: inline-block;
+		}
+		&--num1 {
+			margin-right: 5px;
+			padding-right: 5px;
+			border-right: 2px solid #fff;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.info__img {
+	position: absolute;
+	width: 20px;
+	left: -38px;
+}
+@media only screen and (max-width: 479px) {
+	.info__img {
+		left: 30px;
+		width: 15px;
+	}
+}

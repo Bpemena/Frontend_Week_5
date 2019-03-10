@@ -1,0 +1,12 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+    head
+        +head(head.defaults)
+    body
+        
+        include ../components/footer/footer.pug
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

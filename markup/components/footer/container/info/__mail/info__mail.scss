@@ -1,0 +1,10 @@
+.info__mail {
+	line-height: 1.2;
+	position: relative;
+}
+@media only screen and (max-width: 479px) {
+	.info__mail {
+		width: 50%;
+		text-align: right;
+	}
+}

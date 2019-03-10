@@ -1,0 +1,22 @@
+.info__schedule {
+	line-height: 1.2;
+	position: relative;	
+	margin-top: 28px;
+}
+@media only screen and (max-width: 1023px) {
+	.info__schedule {
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.info__schedule {
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 479px) {
+	.info__schedule {
+		width: 50%;
+		text-align: right;
+		margin: 0;
+	}
+}

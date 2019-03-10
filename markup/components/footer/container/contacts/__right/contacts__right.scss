@@ -1,0 +1,11 @@
+.contacts__right {
+	display: flex;
+	flex-direction: column;
+}
+@media only screen and (max-width: 479px) {
+	.contacts__right {
+		width: 40%;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}

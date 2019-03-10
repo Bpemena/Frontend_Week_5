@@ -1,0 +1,31 @@
+.logoBlock__link {
+	align-self: flex-start;
+	text-decoration: none;
+	color: #3c92d9;
+	font-size: 14px;
+	line-height: 1.2;
+	border-bottom: 1px solid transparent;
+	&:hover {
+		border-bottom: 1px solid #3c92d9
+	}
+}
+
+@media only screen and (max-width: 1367px) {
+	.logoBlock__link {
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.logoBlock__link {
+		font-size: 10px;
+		position: absolute;
+		bottom: 0;
+	}
+}
+@media only screen and (max-width: 479px) {
+	.logoBlock__link {
+		font-size: 10px;
+		position: relative;
+		align-self: center;
+	}
+}

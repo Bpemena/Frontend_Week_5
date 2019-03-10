@@ -1,0 +1,21 @@
+.subscribe__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 245px;
+}
+@media only screen and (max-width: 1367px) {
+	.subscribe__content {
+		height: 185px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.subscribe__content {
+		height: 145px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.subscribe__content {
+		height: auto;
+	}
+}

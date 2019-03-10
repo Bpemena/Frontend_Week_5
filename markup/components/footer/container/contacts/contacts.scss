@@ -1,0 +1,26 @@
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	padding-top: 25px;
+	margin-left: 68px;
+}
+
+@media only screen and (max-width: 1367px) {
+	.contacts {
+		width: 160px;
+		margin-left: 30px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.contacts {
+		width: 40%;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 479px) {
+	.contacts {
+		width: 100%;
+		padding-top: 0;
+	}
+}

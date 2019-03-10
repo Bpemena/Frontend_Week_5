@@ -1,0 +1,17 @@
+.logoBlock__logo {
+	align-self: flex-start;
+}
+@media only screen and (max-width: 767px) {
+	.logoBlock__logo {
+		img {
+			width: 170px;
+		}
+	}
+}
+@media only screen and (max-width: 479px) {
+	.logoBlock__logo {
+		img {
+			width: 100px;
+		}
+	}
+}

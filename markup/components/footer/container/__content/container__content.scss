@@ -1,0 +1,11 @@
+.container__content {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 185px;
+	width: 100%;
+}
+@media only screen and (max-width: 1023px) {
+	.container__content {
+		padding-bottom: 10px;
+	}
+}
