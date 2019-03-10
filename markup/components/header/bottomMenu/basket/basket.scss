@@ -1,0 +1,42 @@
+.header_bottomMenu {
+	&__basket {
+		z-index: 500;
+		width: 225px;
+		height: 100%;
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		padding-left: 99px;
+		cursor: pointer;
+		text-decoration: none;
+		background-color: #003764;
+	}
+}
+.basket {
+	&__bascetIco {
+		position: absolute;
+		top: 17px;
+		left: 53px;
+	}
+	&__text {
+		font-family: Proxima Nova Semibold, Arial, sans-serif;
+		color: #ffffff;		
+		line-height: 55px;
+		margin: 0px;
+		font-size: 18px;	
+	}
+	&__basketIndicator {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		font-size: 14px;
+		font-family: Museo Sans Cyrl, Arial, sans-serif;
+		color: #ffffff;
+		line-height: 15px;
+		text-align: center;
+		background-color: #00ae46;
+		top: 13px;
+		left: 68px;
+	}
+}

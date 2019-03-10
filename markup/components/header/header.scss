@@ -1,0 +1,17 @@
+.header {
+	width: 100%;
+	min-height: 170px;
+}
+.blur {
+	display: none;
+}
+.blur.visible {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(0, 72, 132, 0.5);
+}

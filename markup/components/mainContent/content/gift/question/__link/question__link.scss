@@ -1,0 +1,8 @@
+.question__link {
+	text-decoration: none;
+	color: #004884;
+	border-bottom: 1px solid #004884;
+	&:hover {
+		border-bottom-style: dashed;
+	}
+}

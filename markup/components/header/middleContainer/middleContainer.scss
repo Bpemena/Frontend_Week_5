@@ -1,0 +1,99 @@
+.header_middleContainer {
+	width: 1360px;
+	min-height: 74px;
+	height: auto;
+	padding: 0px 30px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header_logo__img {
+	margin-top: 7px;
+}
+.header_info	{
+	width: 1030px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: #646464;
+	font-size: 16px;
+	&__time {
+		max-width: 285px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 60px;
+		&__icon {
+			position: absolute;
+			top: 16px;
+			left: 5px;			
+		}
+		&__text {
+			margin: 0px;
+			margin-top: 22px;
+		}
+	}
+	&__map {
+		max-width: 285px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 40px;
+		&__icon {
+			position: absolute;
+			top: 20px;
+			left: 0px;			
+		}
+		&__text {
+			margin: 0px;
+			margin-top: 30px;
+		}
+	}
+	&__email {
+		min-width: 195px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 54px;
+		&__icon {
+			position: absolute;
+			top: 27px;
+			left: 0px;			
+		}
+		&__text {
+			display: block;
+			max-width: 140px;
+			margin-top: 30px;
+			text-decoration: none;
+			color: #646464;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	&__phone {
+		max-width: 175px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 55px;
+		&__icon {
+			position: absolute;
+			top: 23px;
+			left: 0px;			
+		}
+		&__text {
+			margin: 0px;
+			margin-top: 23px;
+			&__link {
+				display: block;
+				text-decoration: none;
+				font-family: Proxima Nova Semibold, Arial, sans-serif;
+				color: #646464;
+				&:hover {
+					color: #00953c;
+				}
+			}
+		}
+	}
+}

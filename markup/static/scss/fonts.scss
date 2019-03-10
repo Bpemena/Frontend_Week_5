@@ -29,11 +29,11 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 
 @font-face {
 	font-family: 'ProximaNovaSemibold';
-	src: url('../fonts/ProximaNova-SemiboldIt/ProximaNova-SemiboldIt.eot');
-	src: local('Proxima Nova Semibold Italic'), local('ProximaNova-SemiboldIt'),
-		url('../fonts/ProximaNova-SemiboldIt/ProximaNova-SemiboldIt.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova-SemiboldIt/ProximaNova-SemiboldIt.woff') format('woff'),
-		url('../fonts/ProximaNova-SemiboldIt/ProximaNova-SemiboldIt.ttf') format('truetype');
+	src: url('../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot');
+	src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
+		url('../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff') format('woff'),
+		url('../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: italic;
 }

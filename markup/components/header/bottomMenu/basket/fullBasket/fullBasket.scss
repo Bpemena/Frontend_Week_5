@@ -1,0 +1,135 @@
+.basket_fullBasket.visible {
+	display: block;
+}
+.basket_fullBasket {
+	cursor: default;
+	display: none;
+	width: 666px;
+	height: 463px;
+	float: right;
+	background-color: $bottomMenuBasketFullBasket;
+	text-align: center;
+}
+.fullBasket {
+	&_container {
+		width: 100%;
+		height: 303px;
+		overflow-y: scroll;
+		background-color: $bottomMenuBasketFullBasketContainer;
+		&__item {
+			width: 100%;
+			min-height: 71px;
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			&:hover {
+				background-color: $bottomMenuBasketFullBasketContainerItemHover;
+			}
+		}
+	}
+	&_text {
+		margin: 0px;
+		font-size: 20px;
+		margin-top: 30px;
+	}
+	&_totalPrice {
+		font-family: Proxima Nova Bold, Arial, sans-serif;
+		color: $bottomMenuBasketFullBasketPriceColor;
+	}
+	&_money {
+		font-size: 12px;
+		font-weight: 800;
+		color: $bottomMenuBasketFullBasketPriceColor;
+	}
+	&_link {
+		margin-top: 25px;
+		display: inline-block;
+		width: 226px;
+		height: 45px;
+		text-align: center;
+		line-height: 45px;
+		box-sizing: border-box;
+		text-decoration: none;
+		font-family: Proxima Nova Bold, Arial, sans-serif;
+		&.toBasket {
+			border: 2px solid $bottomMenuBasketFullBasketButtons;
+			color: $bottomMenuBasketFullBasketButtons;
+		}
+		&.doOrder {
+			border: 2px solid $bottomMenuBasketFullBasketButtons;
+			background-color: $bottomMenuBasketFullBasketButtons;
+			color: $bottomMenuBasketFullBasketButtonsText;
+			margin-left: 10px;
+		}
+	}
+}
+.product__name {
+	display: block;
+	text-decoration: none;
+	width: 477px;
+	min-height: 70px;
+	height: auto;
+	box-sizing: border-box;
+	padding: 30px;
+	text-align: left;
+	color: $bottomMenuBasketFullBasketText;
+	font-size: 18px;
+	margin: 0px;
+	cursor: pointer;
+}
+.fullBasket_container__item:hover .product__name {
+	color: $bottomMenuBasketFullBasketTextHover;
+	font-family: Proxima Nova Bold, Arial, sans-serif;
+}
+
+.fullBasket_container__item__price {
+	width: 125px;
+	text-align: right;
+	.price_currentPrice {
+		margin: 0;
+		margin-top: 30px;
+		.currentPrice {
+			font-family: Proxima Nova Bold, Arial, sans-serif;
+			color: $bottomMenuBasketFullBasketPriceColor;
+			font-size: 24px;
+		}
+	}
+	.price_oldPrice {
+		display: none;
+	}
+}
+.fullBasket_container__item.sale {
+	.price_oldPrice {
+		display: block;
+		margin: 0;
+		.OldPrice, .money {
+			color: grey;
+			text-decoration: line-through;
+		}
+	}
+	.price_currentPrice {
+		margin: 0;
+		margin-top: 30px;
+		.currentPrice {
+			font-family: Proxima Nova Bold, Arial, sans-serif;
+			color: $bottomMenuBasketFullBasketSalePriceColor;
+			font-size: 24px;
+		}
+		.money {
+			color: $bottomMenuBasketFullBasketSalePriceColor;
+		}
+	}
+}
+.deleteProduct {
+	width: 50px;
+	box-sizing: border-box;
+	padding-top: 33px;
+	.deleteProduct__icon {
+		cursor: pointer;
+	}
+}
+.money {
+	font-size: 12px;
+	font-weight: 800;
+	color: $bottomMenuBasketFullBasketPriceColor;
+}

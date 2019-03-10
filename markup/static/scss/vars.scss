@@ -1,2 +1,49 @@
-// File for scss-vars.
+$blur: rgba(0,72,132,0.5);
+// ############# header top menu
+$topMenuBackground: #f4f5f4;
+$topMenuTextColor: #646464;
+// ############# header middle container
+$middleContainerTextColor: #646464;
+$middleContainerTextColorHover: #00953c;
+// ############ header botom Menu
+$bottomMenuBackground: #004884;
+$bottomMenuTextColor: #ffffff;
+// ############ header botom Menu Dropdown
+$bottomMenuDropdown: #00953c;
+$bottomMenuDropdownMenuBackground: #ffffff;
+$bottomMenuDropdownMenuBackgroundHover: #e5ecf2;
+$bottomMenuDropdownMenuText: #646464;
+$bottomMenuDropdownMenuTextHover: #004884;
+// ############ header botom Menu Search Form
+$searchFormSubmitBtn: #00ae46;
+$searchFormSubmitBtnHover: #008e46;
+// ############ header botom Menu Search Form Search Results
+$searchFormSearchResults: #f7fafb;
+$searchFormSearchResultsContainer: #ffffff;
+$searchFormSearchResultsContainerItemHover: #e5ecf2;
+$searchFormSearchResultsContainerItemText: #343434;
+$searchFormSearchResultsContainerItemTextHover: #004884;
+$searchFormSearchResultsLink: #004884;
+// ############ header botom Menu Search Form No Search Result
+$searchFormNoSearchResult: #ffffff;
+$searchFormNoSearchResultText: #646464;
+$searchFormNoSearchResultLink: #004884;
+// ############ header botom Menu Basket
+$bottomMenuBasket: #003764;
+$bottomMenuBasketIndicator: #00ae46;
+// ############ header botom Menu Basket Empty
+$bottomMenuBasketEmptyBasket: #ffffff;
+$bottomMenuBasketEmptyBasketText: #343434;
+$bottomMenuBasketEmptyBasketTextLink: #004884;
+// ############ header botom Menu Basket Full
+$bottomMenuBasketFullBasket: #f7fafb;
+$bottomMenuBasketFullBasketContainer: #ffffff;
+$bottomMenuBasketFullBasketContainerItemHover: #e5ecf2;
+$bottomMenuBasketFullBasketText: #343434;
+$bottomMenuBasketFullBasketTextHover: #004884;
+$bottomMenuBasketFullBasketTextLink: #004884;
+$bottomMenuBasketFullBasketButtons: #00ae46;
+$bottomMenuBasketFullBasketButtonsText: #ffffff;
+$bottomMenuBasketFullBasketPriceColor: #004884;
+$bottomMenuBasketFullBasketSalePriceColor: #ae0019;// File for scss-vars.
 // For example: main colors, paddings and so on.
