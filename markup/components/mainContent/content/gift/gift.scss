@@ -1,3 +1,8 @@
 .gift {
 	width: 950px;
 }
+@media only screen and (max-width: 1367px) {
+	.gift {
+		width: 100%;
+	}
+}

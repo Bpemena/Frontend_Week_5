@@ -5,3 +5,24 @@
 	height: 50px;
 	line-height: 50px;
 }
+@media only screen and (max-width: 1367px) {
+	.description__title {
+		font-size: 18px;
+		height: 40px;
+		line-height: 40px;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.description__title {
+		font-size: 16px;
+		height: 30px;
+		line-height: 30px;
+	}
+}
+@media only screen and (max-width: 599px) {
+	.description__title {
+		font-size: 14px;
+		height: 20px;
+		line-height: 20px;
+	}
+}

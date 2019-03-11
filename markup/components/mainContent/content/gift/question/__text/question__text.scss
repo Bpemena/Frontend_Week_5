@@ -5,3 +5,19 @@
 		font-family: 'ProximaNovaItalic';
 	}
 }
+@media only screen and (max-width: 1367px) {
+	.question__text {
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.question__text {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 599px) {
+	.question__text {
+		font-size: 12px;
+	}
+}

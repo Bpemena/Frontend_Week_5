@@ -5,3 +5,30 @@
 	justify-content: center;
 	margin-top: 20px;
 }
+@media only screen and (max-width: 1367px) { 
+	.thanks__bg {
+		height: 90px;
+	}
+}
+@media only screen and (max-width: 1023px) { 
+	.thanks__bg {
+		height: 80px;
+	}
+}
+@media only screen and (max-width: 767px) { 
+	.thanks__bg {
+		height: 70px;
+	}
+}
+@media only screen and (max-width: 599px) { 
+	.thanks__bg {
+		height: 60px;
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 479px) { 
+	.thanks__bg {
+		height: 50px;
+		margin-top: 10px;
+	}
+}

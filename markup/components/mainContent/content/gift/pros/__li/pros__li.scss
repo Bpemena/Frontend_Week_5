@@ -6,3 +6,20 @@
 		color: #343434;
 	}
 }
+@media only screen and (max-width: 1367px) {
+	.pros__li {
+		font-size: 16px;
+		height: 20px;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.pros__li {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 599px) {
+	.pros__li {
+		font-size: 12px;
+		height: 15px;
+	}
+}

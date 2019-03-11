@@ -1,3 +1,18 @@
 .question {
 	margin-top: 25px;
 }
+@media only screen and (max-width: 1367px) {
+	.question {
+		margin-top: 20px;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.question {
+		margin-top: 15px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.question {
+		margin-top: 10px;
+	}
+}

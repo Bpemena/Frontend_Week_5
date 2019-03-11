@@ -1,3 +1,12 @@
 .articles {
 	width: 305px;
 }
+@media only screen and (max-width: 1367px) {
+	.articles {
+		display: flex;
+		flex-wrap: wrap; 
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 10px;
+	}
+}

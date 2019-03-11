@@ -33,7 +33,7 @@
 		margin-top: 30px;
 	}
 	&_totalPrice {
-		font-family: Proxima Nova Bold, Arial, sans-serif;
+		font-family: ProximaNovaBold, Arial, sans-serif;
 		color: $bottomMenuBasketFullBasketPriceColor;
 	}
 	&_money {
@@ -50,16 +50,26 @@
 		line-height: 45px;
 		box-sizing: border-box;
 		text-decoration: none;
-		font-family: Proxima Nova Bold, Arial, sans-serif;
+		font-family: ProximaNovaBold, Arial, sans-serif;
 		&.toBasket {
-			border: 2px solid $bottomMenuBasketFullBasketButtons;
-			color: $bottomMenuBasketFullBasketButtons;
+			border: 2px solid $bottomMenuBasketFullBasketToBasketBorder;
+			color: $bottomMenuBasketFullBasketToBasketText;
+			&:hover {
+				border: 2px solid $bottomMenuBasketFullBasketToBasketBorderHover;
+				background-color: $bottomMenuBasketFullBasketToBasketBackgroundHover;
+				color: $bottomMenuBasketFullBasketToBasketTextHover;
+			}
 		}
 		&.doOrder {
-			border: 2px solid $bottomMenuBasketFullBasketButtons;
-			background-color: $bottomMenuBasketFullBasketButtons;
-			color: $bottomMenuBasketFullBasketButtonsText;
+			border: 2px solid $bottomMenuBasketFullBasketDoOrderBorder;
+			background-color: $bottomMenuBasketFullBasketDoOrderBackground;
+			color: $bottomMenuBasketFullBasketDoOrderText;
 			margin-left: 10px;
+			&:hover {
+				border: 2px solid $bottomMenuBasketFullBasketDoOrderBorderHover;
+				background-color: $bottomMenuBasketFullBasketDoOrderBackgroundHover;
+				color: $bottomMenuBasketFullBasketDoOrderTextHover;
+			}
 		}
 	}
 }
@@ -79,7 +89,7 @@
 }
 .fullBasket_container__item:hover .product__name {
 	color: $bottomMenuBasketFullBasketTextHover;
-	font-family: Proxima Nova Bold, Arial, sans-serif;
+	font-family: ProximaNovaBold, Arial, sans-serif;
 }
 
 .fullBasket_container__item__price {
@@ -89,7 +99,7 @@
 		margin: 0;
 		margin-top: 30px;
 		.currentPrice {
-			font-family: Proxima Nova Bold, Arial, sans-serif;
+			font-family: ProximaNovaBold, Arial, sans-serif;
 			color: $bottomMenuBasketFullBasketPriceColor;
 			font-size: 24px;
 		}
@@ -111,7 +121,7 @@
 		margin: 0;
 		margin-top: 30px;
 		.currentPrice {
-			font-family: Proxima Nova Bold, Arial, sans-serif;
+			font-family: ProximaNovaBold, Arial, sans-serif;
 			color: $bottomMenuBasketFullBasketSalePriceColor;
 			font-size: 24px;
 		}
@@ -132,4 +142,73 @@
 	font-size: 12px;
 	font-weight: 800;
 	color: $bottomMenuBasketFullBasketPriceColor;
+}
+.deleteFromBasket.visible {
+	display: block;
+}
+.deleteFromBasket  {
+	z-index: 1500;
+	display: none;
+	width: 600px;
+	height: 227px;
+	position: fixed;
+	top: calc(50% - 113.5px);
+	left: calc(50% - 300px);
+	background-color: $deleteFromBasketBackground;
+	&_delete {
+		cursor: pointer;
+		font-size: 18px;
+		margin: 0px;
+		margin-top: 34px;
+		width: 216px;
+		height: 45px;
+		box-sizing: border-box;
+		border: 2px solid $deleteFromBasketDeleteBorder;
+		background-color: $deleteFromBasketDeleteBackground;
+		color: $deleteFromBasketDeleteText;
+		font-family: ProximaNovaBold, Arial, sans-serif;
+		&:hover {
+			border: 2px solid $deleteFromBasketDeleteBorderHover;
+			background-color: $deleteFromBasketDeleteBackgroundHover;
+			color: $deleteFromBasketDeleteTextHover;
+		}
+	}
+	&_cancel {
+		cursor: pointer;
+		font-size: 18px;
+		margin: 0px;
+		margin-top: 34px;
+		width: 216px;
+		height: 45px;
+		box-sizing: border-box;
+		border: 2px solid $deleteFromBaskeCancelBorder;
+		background-color: $deleteFromBaskeCancelBackground;
+		color: $deleteFromBaskeCancelText;
+		font-family: ProximaNovaBold, Arial, sans-serif;
+		&:hover {
+			border: 2px solid $deleteFromBaskeCancelBorderHover;
+			background-color: $deleteFromBaskeCancelBackgroundHover;
+			color: $deleteFromBaskeCancelTextHover;
+		}
+	}
+}
+.deleteFromBasket_content {
+	width: 100%;
+	height: 111px;
+	background-color: $deleteFromBasketContentBackground;
+	position: relative;
+	&__h2 {
+		margin: 0px auto;
+		font-size: 40px;
+		font-family: ProximaNovaBold, Arial, sans-serif;
+		color: $deleteFromBasketContentH2;
+		box-sizing: border-box;
+		padding-top: 40px;
+	}
+	&__close {
+		cursor: pointer;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
 }

@@ -4,4 +4,27 @@
 	position: fixed;
 	top: 50%;
 	transform: translateY(-50%);
+	background-color: #fff;
+}
+@media only screen and (max-width: 1367px) { 
+	.thanks {
+		width: 500px;
+	}
+}
+@media only screen and (max-width: 1023px) { 
+	.thanks {
+		width: 400px;
+		padding-top: 20px;
+	}
+}
+@media only screen and (max-width: 767px) { 
+	.thanks {
+		width: 340px;
+	}
+}
+@media only screen and (max-width: 599px) { 
+	.thanks {
+		width: 280px;
+
+	}
 }

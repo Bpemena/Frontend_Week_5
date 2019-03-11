@@ -7,6 +7,12 @@
 		box-sizing: border-box;
 		padding-left: 72px;
 		cursor: pointer;
+		&.open {
+			background-color: $bottomMenuDropdownHover;
+		}
+		&:hover {
+			background-color: $bottomMenuDropdownHover;
+		}
 }
 .dropdownMenu {
 	&__humbergerIco {
@@ -17,7 +23,7 @@
 	&__text {
 		line-height: 55px;
 		color: $bottomMenuTextColor;
-		font-family: Proxima Nova Semibold, Arial, sans-serif;
+		font-family: ProximaNovaSemibold, Arial, sans-serif;
 		font-size: 18px;
 		margin: 0px;
 	}
@@ -66,7 +72,7 @@
 			line-height: 62px;
 		}
 		&:hover &__text {
-			font-family: Proxima Nova Semibold, Arial, sans-serif;
+			font-family: ProximaNovaSemibold, Arial, sans-serif;
 			color: $bottomMenuDropdownMenuTextHover;
 		}	
 	}

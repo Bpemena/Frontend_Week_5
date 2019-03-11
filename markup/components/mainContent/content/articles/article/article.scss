@@ -3,4 +3,21 @@
 	height: 110px;
 	border-bottom: 2px solid #e9eef6;
 	padding-top: 20px;
+	text-overflow: ellipsis;
+}
+@media only screen and (max-width: 1023px) {
+	.article {
+		height: 90px;
+		padding-top: 10px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.article {
+		height: 80px;
+	}
+}
+@media only screen and (max-width: 599px) {
+	.article {
+		height: 70px;
+	}
 }

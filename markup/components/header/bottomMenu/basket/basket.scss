@@ -9,7 +9,12 @@
 		padding-left: 99px;
 		cursor: pointer;
 		text-decoration: none;
-		background-color: #003764;
+		&.active {
+			background-color: $bottomMenuBasket;
+		}
+		&:hover {
+			background-color: $bottomMenuBasket;
+		}
 	}
 }
 .basket {
@@ -19,8 +24,8 @@
 		left: 53px;
 	}
 	&__text {
-		font-family: Proxima Nova Semibold, Arial, sans-serif;
-		color: #ffffff;		
+		font-family: ProximaNovaSemibold, Arial, sans-serif;
+		color: $bottomMenuTextColor;		
 		line-height: 55px;
 		margin: 0px;
 		font-size: 18px;	
@@ -31,11 +36,11 @@
 		height: 15px;
 		border-radius: 50%;
 		font-size: 14px;
-		font-family: Museo Sans Cyrl, Arial, sans-serif;
-		color: #ffffff;
+		font-family: MuseoSansCyrl, Arial, sans-serif;
+		color: $bottomMenuTextColor;
 		line-height: 15px;
 		text-align: center;
-		background-color: #00ae46;
+		background-color: $bottomMenuBasketIndicator;
 		top: 13px;
 		left: 68px;
 	}

@@ -5,3 +5,13 @@
 	text-decoration: none;
 	align-self: center;
 }
+@media only screen and (max-width: 1023px) {
+	.more__link {
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 599px) {
+	.more__link {
+		font-size: 14px;
+	}
+}

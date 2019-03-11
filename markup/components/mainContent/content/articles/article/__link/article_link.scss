@@ -6,3 +6,13 @@
 	font-size: 20px;
 	margin-bottom: 5px;
 }
+@media only screen and (max-width: 1023px) {
+	.article__link {
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 599px) {
+	.article__link {
+		font-size: 14px;
+	}
+}

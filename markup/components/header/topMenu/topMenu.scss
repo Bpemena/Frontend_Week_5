@@ -1,7 +1,7 @@
 .header_topMenuBackgound {
 	width: 100%;
 	height: 41px;
-	background-color: #f4f5f4;
+	background-color: $topMenuBackground;
 }
 .header_topMenu {
 	width: 1360px;
@@ -19,10 +19,21 @@
 	&__item {
 		line-height: 41px;
 		text-decoration: none;
-		color: #646464;
+		color: $topMenuTextColor;
+
+		&:not(:first-child) {
+			padding-left: 45px;
+		}
+
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+
+	.contacts {
+		padding-top: 0;
+		margin-left: 0;
+		width: 0;
 	}
 }
 .userMenu {
@@ -37,7 +48,7 @@
 		&__text {
 			line-height: 41px;
 			margin: 0px;
-			color: #646464;
+			color: $topMenuTextColor;
 		}
 		&.favorites {
 			width: 130px;

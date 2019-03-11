@@ -4,3 +4,23 @@
 	color: #343434;
 	text-align: center;
 }
+@media only screen and (max-width: 1367px) { 
+	.thanks__title {
+		font-size: 36px;
+	}
+}
+@media only screen and (max-width: 1023px) { 
+	.thanks__title {
+		font-size: 32px;
+	}
+}
+@media only screen and (max-width: 767px) { 
+	.thanks__title {
+		font-size: 28px;
+	}
+}
+@media only screen and (max-width: 599px) { 
+	.thanks__title {
+		font-size: 20px;
+	}
+}

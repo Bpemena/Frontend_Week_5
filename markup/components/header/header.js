@@ -1,54 +1,70 @@
 //Выпадающее меню
 $(document).ready(function(){ 
+// Выпадающее меню
 	$('.header_bottomMenu__dropdownMenu').on( 'click', function() {
-		$('.blur').toggleClass('visible');
-		$('.dropdownMenu_container').toggleClass('visible');
+		closeAll();
+		$(this).addClass('open');
+		$('.blur').addClass('visible');
+		$('.dropdownMenu_container').addClass('visible');
 	});
-// Вывод окна об отсутствии результатов###################################
-	// $('.searchForm_textArea').focus(
-	//  function() {
+// Окно без результатов поиска
+	// $('.searchForm_textArea').on( 'click', function() {
+	// 	closeAll();
 	// 	$('.searchForm_noSearchResult').addClass('visible');
 	// 	$('.blur').addClass('visible');
 	// });
-// Скрытие окна об отсутствии результатов###################################
-	// $('.searchForm_textArea').focusout(
-	//  function() {
-	// 	$('.searchForm_noSearchResult').removeClass('visible');
-	// 	$('.blur').removeClass('visible');
-	// });
-	// ####################################################
-	/*// Вывод окна результатов###################################
-	$('.searchForm_textArea').focus(
-	 function() {
-		$('.header_bottomMenu__searchForm__searchResults').addClass('visible');
+// Окно с результатами поиска
+	$('.searchForm_textArea').on( 'click', function() {
+		closeAll();
+		$('.searchForm_searchResults').addClass('visible');
 		$('.blur').addClass('visible');
 	});
-// // Скрытие окна результатов###################################
-	$('.searchForm_textArea').focusout(
-	 function() {
-		$('.header_bottomMenu__searchForm__searchResults').removeClass('visible');
-		$('.blur').removeClass('visible');
-	});*/
-	// ####################################################
+// Пустая корзина
 	// $('.header_bottomMenu__basket').on( 'click', function() {
-	// 	$('.blur').toggleClass('visible');
-	// 	$('.basket_emptyBasket').toggleClass('visible');
+	// 	closeAll();
+	// 	$(this).addClass('active');
+	// 	$('.blur').addClass('visible');
+	// 	$('.basket_emptyBasket').addClass('visible');
 	// });
+// Корзина с товаром
 	$('.header_bottomMenu__basket').on( 'click', function() {
-		$('.blur').toggleClass('visible');
-		$('.basket_fullBasket').toggleClass('visible');
+		closeAll();
+		$(this).addClass('active');
+		$('.blur').addClass('visible');
+		$('.basket_fullBasket').addClass('visible');
 	});
-
-	$('.searchForm_textArea').on( 'click', function() {
-		$('.searchForm_searchResults').toggleClass('visible');
-		$('.blur').toggleClass('visible');
+// Удаление с корзины
+	$('.deleteProduct__icon').on( 'click', function() {
+		$('.deleteFromBasket').addClass('visible');
 	});
-
+// Закрытие корзины
+	//На крестик
+	$('.deleteFromBasket_content__close').on( 'click', function() {
+		$('.deleteFromBasket').removeClass('visible');
+	});
+	//На кнопку удалить
+	$('.deleteFromBasket_delete').on( 'click', function() {
+		$('.deleteFromBasket').removeClass('visible');
+	});
+	//На кнопку отмена
+	$('.deleteFromBasket_cancel').on( 'click', function() {
+		$('.deleteFromBasket').removeClass('visible');
+	});
+//Закрытие по клюку на блюр
 	$('.blur').on( 'click', function() {
-		$('.searchForm_searchResults').removeClass('visible');
-		$('.basket_fullBasket').removeClass('visible');
-		$('.header_bottomMenu__basket__emptyBasket').removeClass('visible');
-		$('.dropdownMenu_container').removeClass('visible');
-		$('.blur').removeClass('visible');
+		closeAll();
 	});
+//Закрытие всего, функция для переключения между доп окнами
+	function closeAll() {
+		$('.blur').removeClass('visible');	
+		$('.dropdownMenu_container').removeClass('visible');
+		$('.searchForm_searchResults').removeClass('visible');
+		$('.searchForm_noSearchResult').removeClass('visible');
+		$('.basket_fullBasket').removeClass('visible');
+		$('.basket_emptyBasket').removeClass('visible');
+		$('.page').removeClass('noScroll');
+		$('.subscribe_thanks').removeClass('visible');
+		$('.header_bottomMenu__basket').removeClass('active');
+		$('.header_bottomMenu__dropdownMenu').removeClass('open');
+	}
 });

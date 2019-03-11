@@ -6,3 +6,20 @@
 		font-family: 'ProximaNovaSemibold';
 	}
 }
+@media only screen and (max-width: 1367px) {
+	.gift__text {
+		font-size: 16px;
+		margin-top: 15px;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.gift__text {
+		font-size: 14px;
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 599px) {
+	.gift__text {
+		font-size: 12px;
+	}
+}

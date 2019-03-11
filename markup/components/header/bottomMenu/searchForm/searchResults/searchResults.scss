@@ -35,7 +35,7 @@
 			}
 			&:hover &__text{
 				color: $searchFormSearchResultsContainerItemTextHover;
-				font-family: Proxima Nova Semibold, Arial, sans-serif;
+				font-family: ProximaNovaSemibold, Arial, sans-serif;
 			}
 			&__text {
 				margin: 0px;
@@ -57,7 +57,7 @@
 		position: relative;
 		text-decoration: none;
 		color: $searchFormSearchResultsLink;
-		font-family: Proxima Nova Bold, Arial, sans-serif;
+		font-family: ProximaNovaBold, Arial, sans-serif;
 		&:hover {
 			text-decoration: underline;
 		}
