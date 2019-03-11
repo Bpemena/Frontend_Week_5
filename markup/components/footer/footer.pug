@@ -1,9 +1,9 @@
 footer.footer
-		.subscribe
+		.subscribe#subscribe
 			.pageContent.subscribe__content
 				.subscribe__text Будьте в курсе всех акций и выгодных предложений
-				.subscribe__form
-					input(type='email' name='subscribeEmail' placeholder='Укажите ваш E-mail').subscribe__email
+				form.subscribe__form
+					input(type='email' name='subscribeEmail' placeholder='Укажите ваш E-mail' required).subscribe__email
 					input(type='submit' value='Подписаться' name='subscribeSubmit').subscribe__submit
 					.subscribe__info 
 						|Нажимая кнопку «Подписаться», я подтверждаю свою дееспособность и даю согласие 

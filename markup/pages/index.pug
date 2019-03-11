@@ -5,6 +5,10 @@ html(class="no-js", lang="ru")
     head
         +head(head.defaults)
     body
+
+        // Popup thanks
+        include ../components/popup/popup.pug
+                
         // Header
         include ../components/header/header.pug
         
@@ -13,6 +17,11 @@ html(class="no-js", lang="ru")
 
         // Footer
         include ../components/footer/footer.pug
+
+
+
+        // Fogging
+        include ../components/fogging/fogging.pug
 
         //- Main scripts. You can replace it, but I recommend you to leave it here
         script(src='%=static=%js/main%=hash=%%=min=%.js')

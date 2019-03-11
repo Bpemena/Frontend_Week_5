@@ -428,6 +428,14 @@ body {
   }
 }
 
+.fogging {
+  position: absolute;
+  width: 100%;
+  height: 100;
+  background-color: rgba(0, 72, 132, 0.502);
+  z-index: 100;
+}
+
 .footer {
   width: 100%;
 }
@@ -450,6 +458,22 @@ body {
   left: 0px;
   top: 0px;
   background-color: rgba(0, 72, 132, 0.5);
+}
+
+.popup {
+  position: fixed;
+  z-index: 1600;
+  background-color: rgba(0, 72, 132, 0.502);
+  overflow-y: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container {
@@ -744,6 +768,15 @@ body {
       flex-wrap: wrap;
 }
 
+.thanks {
+  width: 601px;
+  padding-top: 30px;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .brands {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -923,6 +956,39 @@ body {
   }
 }
 
+.subscribe__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 245px;
+}
+
+@media only screen and (max-width: 1367px) {
+  .subscribe__content {
+    height: 185px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .subscribe__content {
+    height: 145px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .subscribe__content {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
 .subscribe__email {
   width: 386px;
   height: 45px;
@@ -990,39 +1056,6 @@ body {
     height: 20px;
     font-size: 12px;
     margin-bottom: 5px;
-  }
-}
-
-.subscribe__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 245px;
-}
-
-@media only screen and (max-width: 1367px) {
-  .subscribe__content {
-    height: 185px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .subscribe__content {
-    height: 145px;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  .subscribe__content {
-    padding-top: 5px;
-    padding-bottom: 5px;
   }
 }
 
@@ -1335,6 +1368,83 @@ body {
 
 .gift {
   width: 950px;
+}
+
+.thanks__bg {
+  background-color: rgba(228, 237, 243, 0.302);
+  height: 114px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.thanks__close {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.thanks__close span {
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  top: 50%;
+  left: 50%;
+  margin-top: -2px;
+  margin-left: -10px;
+  background-color: #ccd1d6;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.thanks__close span::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  top: 50%;
+  left: 50%;
+  margin-top: -2px;
+  margin-left: -10px;
+  background-color: #ccd1d6;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.thanks__link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #00ae46;
+  display: inline-block;
+  font-family: 'ProximaNovaBold';
+  font-size: 18px;
+  text-align: center;
+  width: 216px;
+  height: 45px;
+  line-height: 45px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.thanks__text {
+  font-family: 'ProximaNovaSemibold';
+  font-size: 20px;
+  color: #343434;
+  text-align: center;
+}
+
+.thanks__title {
+  font-family: 'ProximaNovaBold';
+  font-size: 40px;
+  color: #343434;
+  text-align: center;
 }
 
 .brands__center {
@@ -1922,6 +2032,10 @@ body {
   color: #343434;
 }
 
+.comments {
+  width: 100%;
+}
+
 .pros {
   padding-left: 20px;
 }
@@ -2107,5 +2221,3 @@ body {
   padding-left: 40px;
   border-bottom: 1px solid transparent;
 }
-
-/*# sourceMappingURL=main.css.map */
